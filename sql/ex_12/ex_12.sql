@@ -1,0 +1,1 @@
+select count(movies.id) AS "Number of 'western movies" from movies INNER JOIN genres ON movies.genre_id=genres.id INNER JOIN producers ON movies.producer_id=producers.id  where genres.name="western" and producers.name="tartan movies" or producers.name="lionsgate uk";

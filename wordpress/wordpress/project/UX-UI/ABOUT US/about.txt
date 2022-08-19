@@ -1,0 +1,6 @@
+WHO ARE WE?
+
+We are POST APP. A Web Application that allow everyone over the age of 13 years old to comment on stuff found on the internet. Users will be able to create a post, edit it and delete it. 
+They will also be able to comment on a post and delete the comments.
+
+Our vision is an APP where everyone can share whatever they found on the internet, and let other people comment their posts.

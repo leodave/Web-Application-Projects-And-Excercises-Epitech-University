@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="movies"></div>
+  </body>
+  <script>
+    const div = document.getElementById("movies");
+    async function getMovies() {
+      const data = await fetch("http://localhost:3000/api/movies");
+      const allMovies = await data.json();
+
+      for (var i = 0; i < allMovies.length; i++) {
+        let tit = document.createElement("h1");
+        let des = document.createElement("p");
+        let gen = document.createElement("button");
+        let pro = document.createElement("button");
+        tit.innerHTML = allMovies[i].title;
+        des.innerHTML = allMovies[i].summary;
+        gen.innerHTML = "Genres";
+        gen.onclick = "/genres.html";
+        pro.innerHTML = "Producer";
+        pro.onclick = div.appendChild(tit);
+        div.appendChild(des);
+        div.appendChild(gen);
+        div.appendChild(pro);
+      }
+    }
+    getMovies();
+  </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="gen"></div>
+  </body>
+  <script>
+    const gen = document.getElementById("gen"); //get movies //create elements
+    async function getgenres(id) {
+      const data = await fetch("http://localhost:3000/api/movies/:id/genres");
+      const genre = await data.json();
+      console.log(genre);
+
+      for (var i = 0; i < genre.length; i++) {
+        let genres = document.createElement("h1");
+        genres.innerHTML = genre[i].name;
+        gen.appendChild(genres);
+      }
+    }
+    getgenres(id);
+  </script>
+</html>

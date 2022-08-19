@@ -1,0 +1,21 @@
+PROBLEMS:
+
+Can't make 2 comments in a row for some reason we don't yet understand.
+Auto refreshing some components
+
+
+IMPROVEMENTS:
+
+Software Architecture
+Design Colors and Styles
+Code Structure and readability
+Less use of Javascript and more Vue
+
+
+NEW FEATURES:
+
+Comments of comments
+Filtering EDIT/DELETE BUTTONS by user's ID in comments
+Uploading pictures/videos/files to a Post
+UP and DOWN Voting posts and comments
+

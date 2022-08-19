@@ -1,0 +1,5 @@
+username: carlos
+password: Tg%ynKO^B@&hyfZn34MpQCn^
+
+define('SECURE_AUTH_KEY',  '2Qc,pdZ:h>&9Lfo.Xfudg?rF[jBb},^a_u@lq65|8&gy.c2WB&-po#dH~Uqea%B1');
+

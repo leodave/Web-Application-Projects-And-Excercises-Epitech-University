@@ -1,0 +1,3 @@
+<?php
+require("ex_01_2.php");
+my_included_putstr("sir"); 
